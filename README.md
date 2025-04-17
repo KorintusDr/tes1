@@ -49,8 +49,9 @@ Diabetes merupakan salah satu penyakit kronis yang paling umum di dunia. Menurut
 |-----------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | **Missing Value**      | Tidak ada nilai null, namun terdapat nilai 0 pada kolom yang seharusnya tidak bernilai nol seperti `BMI`, `Glucose`, `Insulin`, `BloodPressure`, dan `SkinThickness`.     | ![Image](https://github.com/user-attachments/assets/062ec92d-6d35-4533-b3b9-b4f0e93c4abd) ![Image](https://github.com/user-attachments/assets/cdbe68b2-f86f-4a6b-b4ab-dd00d33c86a7)                                                                                     |
 | **Duplikat**           | Tidak ada duplikasi dalam dataset.                                        | ![Image](https://github.com/user-attachments/assets/0a746175-c062-439e-8290-7bf9cd8e9286)                                                                                           |
-| **Outlier**            | Adanya outlier pada beberapa fitur numerik setelah mengganti nilai 0 di masing-masing kolom dengan rata-rata kolom tersebut, seperti nilai ekstrem pada Pregnancies, Age, Insulin, dan lain-lain.    | ![Image](https://github.com/user-attachments/assets/2860e3c3-f9db-4d82-9e9a-d2efa61f864b)                                                                                        |
-| **Korelasi**            | Dalam dataset ini, korelasi antar fitur-fitur  memiliki hubungan yang kuat.     | ![Image](https://github.com/user-attachments/assets/53f4a221-47c6-4e03-82b2-9c0cc3c78780)                                                                                     |
+| **Outlier**            | Adanya outlier pada beberapa fitur numerik setelah mengganti nilai 0 di masing-masing kolom dengan rata-rata kolom tersebut, seperti nilai ekstrem pada Pregnancies, Age, Insulin, dan lain-lain.    | ![Image](https://github.com/user-attachments/assets/72b1ba2b-7b3e-4290-bdab-2e3f51978722)
+                                                                                        |
+| **Korelasi**            | Dalam dataset ini, korelasi antar fitur-fitur  memiliki hubungan yang kuat.     | ![Image](https://github.com/user-attachments/assets/53d0f72b-2425-40da-850e-17f8bf199c48)                                                                                     |
 
 ---
 
@@ -117,7 +118,8 @@ Hasil evaluasi lima model yang diuji dan dibandingkan performanya, yaitu:
 
 | Confusion Matrix | Classification Report |
 |------------------|------------------------|
-| ![Image](https://github.com/user-attachments/assets/b7fdb161-89d4-4468-acdd-56d79f517555) | ![Image](https://github.com/user-attachments/assets/0aef32ab-9a87-45f5-94d2-e6ef8066b0a8) |
+| ![Image](https://github.com/user-attachments/assets/c7d42ef7-976f-458c-af6a-7d176ad94137)
+ | ![Image](https://github.com/user-attachments/assets/139b9aab-a4ce-4969-bfa9-4ae62c13ed77) |
 
 Confusion Matrix menunjukkan bahwa model berhasil mengklasifikasikan 83 pasien non-diabetes dan 27 pasien diabetes dengan benar, sementara terdapat 9 kasus false positive (prediksi diabetes padahal tidak) dan 16 kasus false negative (tidak terdeteksi sebagai diabetes padahal sebenarnya positif). Sementara itu dari hasil Classification Report, model memiliki akurasi keseluruhan sebesar 81%, dengan precision 84% dan recall 90% untuk kelas non-diabetes (0), serta precision 75% dan recall 63% untuk kelas diabetes (1). Ini menunjukkan bahwa model cukup baik dalam mengenali pasien non-diabetes, namun masih memiliki kelemahan dalam mendeteksi pasien yang benar-benar menderita diabetes, yang terlihat dari recall yang lebih rendah pada kelas 1.
 
@@ -127,7 +129,7 @@ Confusion Matrix menunjukkan bahwa model berhasil mengklasifikasikan 83 pasien n
 
 | Confusion Matrix | Classification Report |
 |------------------|------------------------|
-| ![Image](https://github.com/user-attachments/assets/ec2d35c9-889b-4041-8db4-f7e5428a8146) | ![Image](https://github.com/user-attachments/assets/0635441e-e933-4302-9a66-adf54731a4cc) |
+| ![Image](https://github.com/user-attachments/assets/ee1efad1-0fc9-449e-821c-780b566f69b7) | ![Image](https://github.com/user-attachments/assets/9dbc0280-c2f7-447f-b340-21a79475ec8b) |
 
 Model Decision Tree menghasilkan performa yang cenderung seimbang namun belum optimal, terutama dalam mendeteksi kasus diabetes. Confusion matrix menunjukkan bahwa dari 92 pasien non-diabetes, 76 berhasil diprediksi dengan benar, sementara 16 salah diklasifikasikan sebagai penderita diabetes. Di sisi lain, dari 43 pasien yang benar-benar mengidap diabetes, hanya 23 yang terdeteksi dengan benar, sedangkan 20 lainnya tidak terdeteksi oleh model. Hal ini mencerminkan ketidakseimbangan dalam kemampuan model mengenali kelas positif. Hasil classification report memperkuat hal tersebut, dengan precision kelas 1 (positif diabetes) hanya 0.59 dan recall sebesar 0.53. Meskipun akurasi keseluruhan sebesar 73% terdengar cukup baik, nilai recall yang rendah pada kelas positif menunjukkan bahwa model ini masih kurang sensitif terhadap pasien yang benar-benar memiliki diabetes.
 
@@ -137,7 +139,7 @@ Model Decision Tree menghasilkan performa yang cenderung seimbang namun belum op
 
 | Confusion Matrix | Classification Report |
 |------------------|------------------------|
-| ![Image](https://github.com/user-attachments/assets/16ce6470-ad0e-493f-935a-39daf8c45b40) | ![Image](https://github.com/user-attachments/assets/827b8d6d-a4b5-4ebb-a654-c1a4593d89ff) |
+| ![Image](https://github.com/user-attachments/assets/9bf09a4b-55f4-44b5-9d72-8e70a76e960e) | ![Image](https://github.com/user-attachments/assets/d75c16a5-7b36-4a5f-aa53-5bec416b6d76) |
 
 Model Random Forest menunjukkan bahwa dari 92 pasien yang sebenarnya tidak menderita diabetes (kelas 0), sebanyak 79 pasien berhasil diklasifikasikan dengan benar, sementara 13 pasien keliru diklasifikasikan sebagai positif diabetes. Untuk kelas 1 (sebenarnya menderita diabetes), dari 43 pasien, model berhasil memprediksi 27 pasien dengan benar, dan 16 sisanya salah diklasifikasikan sebagai non-diabetes.
 
@@ -149,7 +151,7 @@ Dalam Classification Report, kita bisa lihat bahwa model ini memiliki akurasi ke
 
 | Confusion Matrix | Classification Report |
 |------------------|------------------------|
-| ![Image](https://github.com/user-attachments/assets/d5690b91-e735-4b08-84ae-c3b57b1f18a6) | ![Image](https://github.com/user-attachments/assets/52ee2873-66a3-4a7c-9cfc-e2f65f18e3f9) |
+| ![Image](https://github.com/user-attachments/assets/3bff3d21-4684-4007-8395-1e26784dd943) | ![Image](https://github.com/user-attachments/assets/6ff5a42e-33f7-435a-839a-0a0015e3de96) |
 
 Model Support Vector Machine (SVM) ini menunjukkan bahwa model sangat baik dalam mengenali pasien yang tidak menderita diabetes (kelas 0) — sebanyak 85 dari 92 pasien berhasil diprediksi dengan benar, hanya 8 yang salah diklasifikasikan. Namun, untuk pasien yang menderita diabetes (kelas 1), performa model masih kurang optimal, hanya 16 dari 43 yang terdeteksi dengan tepat, dan sebanyak 27 pasien salah diprediksi sebagai non-diabetes.
 
@@ -161,7 +163,8 @@ Dari laporan klasifikasinya, terlihat bahwa meskipun precision untuk kelas 1 ada
 
 | Confusion Matrix | Classification Report |
 |------------------|------------------------|
-| ![Image](https://github.com/user-attachments/assets/ecd02731-ab1a-43d6-a65c-e8e53ede1fe4) | ![Image](https://github.com/user-attachments/assets/6f65f995-ee01-4af2-af5f-2eb4a9de4ef6) |
+| ![Image](https://github.com/user-attachments/assets/34ea27a0-9169-49b3-b847-e27490680ee1)
+ | ![Image](https://github.com/user-attachments/assets/75415f68-67c6-4d4f-af3b-22cac78cc7a6) |
 
 Confusion Matrix dari model K-Nearest Neighbors (KNN) menunjukkan bahwa model berhasil mengklasifikasikan 80 pasien non-diabetes dan 25 pasien diabetes dengan benar, namun terdapat 12 kasus false positive (pasien diprediksi diabetes padahal tidak) dan 18 kasus false negative (pasien tidak terdeteksi diabetes padahal sebenarnya positif). Berdasarkan Classification Report, model ini memiliki akurasi sebesar 78%. Untuk kelas non-diabetes (0), precision-nya 82% dan recall-nya 87%, menunjukkan bahwa model cukup handal dalam mendeteksi pasien yang tidak memiliki diabetes. Namun, performa pada kelas diabetes (1) masih kurang optimal, dengan precision 68% dan recall 58%, yang mengindikasikan model masih cukup sering salah mendeteksi pasien yang seharusnya positif diabetes. Secara keseluruhan, performa KNN sedikit di bawah Logistic Regression, terutama dalam mengenali kasus diabetes.
 
@@ -169,7 +172,7 @@ Confusion Matrix dari model K-Nearest Neighbors (KNN) menunjukkan bahwa model be
 
 ### Perbandingan Model 
 
-![Image](https://github.com/user-attachments/assets/d2049815-8e4f-47a6-93d5-6844cc990e0e)
+![Image](https://github.com/user-attachments/assets/801b9165-2a0f-4512-9d61-388374d0f716)
 
 Grafik di atas menunjukkan bahwa Logistic Regression menjadi kandidat model terbaik secara akurasi, diikuti oleh Random Forest dan KNN.
 
