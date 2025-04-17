@@ -117,8 +117,7 @@ Hasil evaluasi lima model yang diuji dan dibandingkan performanya, yaitu:
 
 | Confusion Matrix | Classification Report |
 |------------------|------------------------|
-| ![Image](https://github.com/user-attachments/assets/c7d42ef7-976f-458c-af6a-7d176ad94137)
- | ![Image](https://github.com/user-attachments/assets/139b9aab-a4ce-4969-bfa9-4ae62c13ed77) |
+| ![Image](https://github.com/user-attachments/assets/c7d42ef7-976f-458c-af6a-7d176ad94137) | ![Image](https://github.com/user-attachments/assets/139b9aab-a4ce-4969-bfa9-4ae62c13ed77) |
 
 Confusion Matrix menunjukkan bahwa model berhasil mengklasifikasikan 83 pasien non-diabetes dan 27 pasien diabetes dengan benar, sementara terdapat 9 kasus false positive (prediksi diabetes padahal tidak) dan 16 kasus false negative (tidak terdeteksi sebagai diabetes padahal sebenarnya positif). Sementara itu dari hasil Classification Report, model memiliki akurasi keseluruhan sebesar 81%, dengan precision 84% dan recall 90% untuk kelas non-diabetes (0), serta precision 75% dan recall 63% untuk kelas diabetes (1). Ini menunjukkan bahwa model cukup baik dalam mengenali pasien non-diabetes, namun masih memiliki kelemahan dalam mendeteksi pasien yang benar-benar menderita diabetes, yang terlihat dari recall yang lebih rendah pada kelas 1.
 
@@ -162,8 +161,7 @@ Dari laporan klasifikasinya, terlihat bahwa meskipun precision untuk kelas 1 ada
 
 | Confusion Matrix | Classification Report |
 |------------------|------------------------|
-| ![Image](https://github.com/user-attachments/assets/34ea27a0-9169-49b3-b847-e27490680ee1)
- | ![Image](https://github.com/user-attachments/assets/75415f68-67c6-4d4f-af3b-22cac78cc7a6) |
+| ![Image](https://github.com/user-attachments/assets/34ea27a0-9169-49b3-b847-e27490680ee1) | ![Image](https://github.com/user-attachments/assets/75415f68-67c6-4d4f-af3b-22cac78cc7a6) |
 
 Confusion Matrix dari model K-Nearest Neighbors (KNN) menunjukkan bahwa model berhasil mengklasifikasikan 80 pasien non-diabetes dan 25 pasien diabetes dengan benar, namun terdapat 12 kasus false positive (pasien diprediksi diabetes padahal tidak) dan 18 kasus false negative (pasien tidak terdeteksi diabetes padahal sebenarnya positif). Berdasarkan Classification Report, model ini memiliki akurasi sebesar 78%. Untuk kelas non-diabetes (0), precision-nya 82% dan recall-nya 87%, menunjukkan bahwa model cukup handal dalam mendeteksi pasien yang tidak memiliki diabetes. Namun, performa pada kelas diabetes (1) masih kurang optimal, dengan precision 68% dan recall 58%, yang mengindikasikan model masih cukup sering salah mendeteksi pasien yang seharusnya positif diabetes. Secara keseluruhan, performa KNN sedikit di bawah Logistic Regression, terutama dalam mengenali kasus diabetes.
 
