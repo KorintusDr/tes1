@@ -2,7 +2,7 @@
 
 ## Domain Proyek - Kesehatan 
 
-![Image](https://github.com/user-attachments/assets/56c81e6b-b2ef-42cc-a855-fafc3cb01a43)
+![Image](https://github.com/user-attachments/assets/d4fdca47-b2ab-4893-8c4d-3844a21af7ce)
 
 Diabetes merupakan salah satu penyakit kronis yang paling umum di dunia. Menurut WHO, jumlah penderita diabetes meningkat setiap tahunnya. Oleh karena itu, deteksi dini terhadap potensi diabetes sangat penting agar pasien bisa segera mendapat penanganan medis yang tepat. Dengan menggunakan pendekatan machine learning, kita dapat memprediksi apakah seseorang berisiko mengidap diabetes berdasarkan parameter-parameter medis yang tersedia.
 
@@ -47,7 +47,7 @@ Diabetes merupakan salah satu penyakit kronis yang paling umum di dunia. Menurut
 
 | Kondisi               | Deskripsi                                                                 | Gambar                                                                                                                                   |
 |-----------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| **Missing Value**      | Tidak ada nilai null, namun terdapat nilai 0 pada kolom yang seharusnya tidak bernilai nol seperti `BMI`, `Glucose`, `Insulin`, `BloodPressure`, dan `SkinThickness`.     | ![Image](https://github.com/user-attachments/assets/062ec92d-6d35-4533-b3b9-b4f0e93c4abd) ![Image](https://github.com/user-attachments/assets/e174ae02-4679-4068-8e2a-ff97fd4a4299)                                                                                      |
+| **Missing Value**      | Tidak ada nilai null, namun terdapat nilai 0 pada kolom yang seharusnya tidak bernilai nol seperti `BMI`, `Glucose`, `Insulin`, `BloodPressure`, dan `SkinThickness`.     | ![Image](https://github.com/user-attachments/assets/062ec92d-6d35-4533-b3b9-b4f0e93c4abd) ![Image](https://github.com/user-attachments/assets/cdbe68b2-f86f-4a6b-b4ab-dd00d33c86a7)                                                                                     |
 | **Duplikat**           | Tidak ada duplikasi dalam dataset.                                        | ![Image](https://github.com/user-attachments/assets/96add838-7575-4beb-a4ba-ae527ee704ca)                                                                                           |
 | **Outlier**            | Adanya outlier pada beberapa fitur numerik setelah mengganti nilai 0 di masing-masing kolom dengan rata-rata kolom tersebut, seperti nilai ekstrem pada Pregnancies, Age, Insulin, dan lain-lain.    | ![Image](https://github.com/user-attachments/assets/f872b75a-d425-4f5b-b07f-44d3258f1f43)                                                                                        |
 | **Korelasi**            | Dalam dataset ini, korelasi antar fitur-fitur  memiliki hubungan yang kuat.     | ![Image](https://github.com/user-attachments/assets/53f4a221-47c6-4e03-82b2-9c0cc3c78780)                                                                                     |
