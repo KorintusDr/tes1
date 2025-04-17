@@ -2,7 +2,7 @@
 
 ## Domain Proyek - Kesehatan 
 
-![Image](https://github.com/user-attachments/assets/f60a210f-cca5-41b4-9eb2-05b8a5f6e29a)
+![Image](https://github.com/user-attachments/assets/7fbe5968-12aa-48e3-9cb5-a0270b57e160)
 
 Diabetes merupakan salah satu penyakit kronis yang paling umum di dunia. Menurut WHO, jumlah penderita diabetes meningkat setiap tahunnya. Oleh karena itu, deteksi dini terhadap potensi diabetes sangat penting agar pasien bisa segera mendapat penanganan medis yang tepat. Dengan menggunakan pendekatan machine learning, kita dapat memprediksi apakah seseorang berisiko mengidap diabetes berdasarkan parameter-parameter medis yang tersedia.
 
