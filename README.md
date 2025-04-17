@@ -9,14 +9,23 @@ Diabetes merupakan salah satu penyakit kronis yang paling umum di dunia. Menurut
 ## Business Understanding
 
 ### Problem Statements
-1. Bagaimana cara memprediksi apakah seseorang mengidap diabetes berdasarkan data medis yang tersedia?
-2. Algoritma mana yang memberikan hasil prediksi paling akurat?
+Saat ini, banyak fasilitas kesehatan mengalami keterbatasan dalam hal waktu dan sumber daya untuk melakukan skrining dini terhadap penyakit diabetes secara menyeluruh. Skrining manual membutuhkan pemeriksaan intensif, sementara jumlah tenaga medis terbatas. Tanpa sistem pendeteksi awal yang efisien, risiko pasien mengalami komplikasi serius akibat keterlambatan diagnosis menjadi lebih tinggi.
+
+Masalah utama yang ingin diselesaikan:
+
+1. Bagaimana membangun sistem pendukung keputusan berbasis data medis untuk membantu tenaga medis memprediksi risiko diabetes secara cepat dan akurat?
+
+2. Model machine learning apa yang paling efektif dalam mengidentifikasi pasien yang berisiko menderita diabetes?
 
 ### Goals
-1. Membangun model prediktif untuk menentukan apakah seorang pasien mengidap diabetes.
-2. Mengevaluasi dan membandingkan performa beberapa algoritma machine learning.
+Tujuan utama proyek ini adalah untuk membantu fasilitas layanan kesehatan meningkatkan efektivitas proses skrining pasien dengan:
+1. Mengembangkan model prediktif berbasis machine learning untuk mengklasifikasikan pasien ke dalam kategori diabetes atau non-diabetes.
+2. Membandingkan performa beberapa algoritma machine learning dari sisi akurasi, recall, dan presisi guna memilih model yang paling optimal.
+3. Meningkatkan kecepatan dan efisiensi dalam pengambilan keputusan oleh tenaga medis melalui sistem berbasis data.
 
 ### Solution Statements
+Untuk menjawab kebutuhan bisnis di atas, solusi yang ditawarkan meliputi:
+- Pengembangan prototipe sistem prediksi diabetes berbasis machine learning yang dapat diintegrasikan dengan sistem informasi rumah sakit atau aplikasi kesehatan digital.
 - Menggunakan algoritma Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest, dan Support Vector Machine.
 - Melakukan evaluasi performa menggunakan Confusion Matrix, Precision, Recall, dan F1-Score.
 
