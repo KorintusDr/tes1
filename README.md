@@ -49,11 +49,11 @@ Diabetes merupakan salah satu penyakit kronis yang paling umum di dunia. Menurut
 |-----------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | **Missing Value**      | Tidak ada nilai null, namun terdapat nilai 0 pada kolom yang seharusnya tidak bernilai nol seperti `BMI`, `Glucose`, `Insulin`, `BloodPressure`, dan `SkinThickness`.     | ![Image](https://github.com/user-attachments/assets/062ec92d-6d35-4533-b3b9-b4f0e93c4abd) ![Image](https://github.com/user-attachments/assets/cdbe68b2-f86f-4a6b-b4ab-dd00d33c86a7)                                                                                     |
 | **Duplikat**           | Tidak ada duplikasi dalam dataset.                                        | ![Image](https://github.com/user-attachments/assets/0a746175-c062-439e-8290-7bf9cd8e9286)                                                                                           |
+| **Duplikat**           | Tidak ada duplikasi dalam dataset.                                        | ![Image](https://github.com/user-attachments/assets/0a746175-c062-439e-8290-7bf9cd8e9286)                                                                                           |
 | **Outlier**            | Adanya outlier pada beberapa fitur numerik setelah mengganti nilai 0 di masing-masing kolom dengan rata-rata kolom tersebut, seperti nilai ekstrem pada Pregnancies, Age, Insulin, dan lain-lain.    | ![Image](https://github.com/user-attachments/assets/72b1ba2b-7b3e-4290-bdab-2e3f51978722)
                                                                                         |
 |
-| **Korelasi**           | Dalam dataset ini, korelasi antar fitur-fitur  memiliki hubungan yang kuat.         | ![Image](https://github.com/user-attachments/assets/53d0f72b-2425-40da-850e-17f8bf199c48)
-                                                                                        |
+
 | **Korelasi**            | Dalam dataset ini, korelasi antar fitur-fitur  memiliki hubungan yang kuat.     | ![Image](https://github.com/user-attachments/assets/53d0f72b-2425-40da-850e-17f8bf199c48) |
 
 ---
