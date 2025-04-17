@@ -13,7 +13,7 @@ Saat ini, banyak fasilitas kesehatan mengalami keterbatasan dalam hal waktu dan 
 
 Masalah utama yang ingin diselesaikan:
 
-1. Bagaimana membangun sistem pendukung keputusan berbasis data medis untuk membantu tenaga medis memprediksi risiko diabetes secara cepat dan akurat?
+1. Bagaimana membangun sistem pendukung keputusan untuk membantu tenaga medis memprediksi risiko diabetes secara cepat dan akurat?
 
 2. Model machine learning apa yang paling efektif dalam mengidentifikasi pasien yang berisiko menderita diabetes?
 
@@ -25,7 +25,7 @@ Tujuan utama proyek ini adalah untuk membantu fasilitas layanan kesehatan mening
 
 ### Solution Statements
 Untuk menjawab kebutuhan bisnis di atas, solusi yang ditawarkan meliputi:
-- Pengembangan prototipe sistem prediksi diabetes berbasis machine learning yang dapat diintegrasikan dengan sistem informasi rumah sakit atau aplikasi kesehatan digital.
+- Pengembangan sistem prediksi diabetes berbasis machine learning yang dapat diintegrasikan dengan sistem informasi rumah sakit atau aplikasi kesehatan digital.
 - Menggunakan algoritma Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest, dan Support Vector Machine.
 - Melakukan evaluasi performa menggunakan Confusion Matrix, Precision, Recall, dan F1-Score.
 
@@ -189,9 +189,7 @@ Model seperti SVM dan Decision Tree masih menghadapi masalah dalam menangani kel
 ## Kesimpulan
 Dari hasil evaluasi lima model machine learning untuk memprediksi risiko diabetes berdasarkan dataset Pima Indians Diabetes, dapat disimpulkan bahwa masing-masing model memiliki kelebihan dan kekurangannya sendiri dalam mendeteksi pasien dengan diabetes. Model seperti Logistic Regression dan Random Forest menunjukkan performa yang cukup baik dalam hal akurasi dan precision, khususnya untuk mendeteksi pasien non-diabetes. Namun, performa recall terhadap kelas diabetes masih perlu ditingkatkan agar dapat digunakan secara efektif untuk deteksi dini.
 
-Sebagian besar tujuan yang ditetapkan dalam tahap Business Understanding telah berhasil dicapai, seperti membandingkan performa antar model dan memahami perilaku masing-masing algoritma terhadap data. Namun demikian, goal utama yaitu deteksi dini pasien diabetes belum sepenuhnya tercapai, mengingat beberapa model seperti SVM dan KNN menunjukkan recall yang rendah terhadap pasien diabetes, yang justru merupakan target utama dalam konteks prediksi risiko.
-
-Secara keseluruhan, solusi yang diterapkan telah memberikan dampak positif dalam membantu proses pemilihan model yang paling tepat untuk kasus ini. Meski demikian, hasil ini juga membuka ruang untuk peningkatan lebih lanjut.
+Sebagian besar tujuan yang ditetapkan dalam tahap Business Understanding telah berhasil dicapai, seperti membandingkan performa antar model dan memahami perilaku masing-masing algoritma terhadap data. Namun demikian, goal utama yaitu deteksi dini pasien diabetes belum sepenuhnya tercapai, mengingat beberapa model seperti SVM dan KNN menunjukkan recall yang rendah terhadap pasien diabetes, yang justru merupakan target utama dalam konteks prediksi risiko. Meskipun masih terdapat ruang perbaikan terutama pada aspek recall untuk kelas positif, model ini sudah cukup menjanjikan untuk dijadikan pondasi awal sistem pendukung keputusan yang dapat mempercepat proses skrining risiko diabetes di fasilitas kesehatan.
 
 ---
 
